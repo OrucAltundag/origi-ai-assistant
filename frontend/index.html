@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Origi Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Origi Assistant MVP</h1>
+      <section>
+        <h2>Create Note</h2>
+        <form id="note-form">
+          <input id="note-title" placeholder="Note title" required />
+          <textarea id="note-content" placeholder="Note content" required></textarea>
+          <button type="submit">Save Note</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Create Task</h2>
+        <form id="task-form">
+          <input id="task-title" placeholder="Task title" required />
+          <input id="task-description" placeholder="Task description" />
+          <button type="submit">Save Task</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Notes</h2>
+        <ul id="notes-list"></ul>
+      </section>
+
+      <section>
+        <h2>Tasks</h2>
+        <ul id="tasks-list"></ul>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
